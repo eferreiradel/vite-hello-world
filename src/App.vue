@@ -1,12 +1,11 @@
 <template>
-  <div class="v-card">
-    <subtitle></subtitle>
-    <p>{{ msg }}</p>
+  <div class="row">
+    <jumbotron></jumbotron>
   </div>
 </template>
 
 <script>
-import subtitle from "./components/subtitle.vue";
+import jumbotron from "./components/jumbotron.vue";
 export default {
   name: "hello",
   data() {
@@ -15,7 +14,14 @@ export default {
     };
   },
   components: {
-    subtitle: subtitle,
+    jumbotron: jumbotron,
   },
 };
 </script>
+<style>
+.row {
+  justify-content: center;
+  justify-content: center;
+  width: 100%;
+}
+</style>
